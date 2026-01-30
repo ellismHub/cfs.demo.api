@@ -1,10 +1,11 @@
+using cfs.demo.Data;
+using cfs.demo.Services;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore; // Ensure this is present
 using Microsoft.Extensions.Options;
 using Microsoft.Identity.Web;
-using cfs.demo.Data;
-using cfs.demo.Services;
+using Microsoft.IdentityModel.Tokens;
 using SQLitePCL;
 
 Batteries.Init();
@@ -25,7 +26,12 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
         options.Authority = $"{builder.Configuration["AzureAd:Instance"]}{builder.Configuration["AzureAd:TenantId"]}/v2.0";
-        options.Audience = builder.Configuration["AzureAd:ClientId"];
+        //options.Audience = builder.Configuration["AzureAd:ClientId"];
+        // Disable audience validation entirely (accept any aud)
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateAudience = false
+        };
     });
 
 builder.Services.AddAuthorization();
