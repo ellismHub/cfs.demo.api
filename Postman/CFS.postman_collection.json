@@ -36,7 +36,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n  \"firstName\": \"ellis3\",\r\n  \"lastName\": \"string\",\r\n  \"age\": 12,\r\n  \"city\": \"brisbane\",\r\n  \"state\": \"qld\",\r\n  \"pincode\": \"1122\"\r\n}",
+          "raw": "{\r\n  \"firstName\": \"xx\",\r\n  \"lastName\": \"string\",\r\n  \"age\": 12,\r\n  \"city\": \"brisbane\",\r\n  \"state\": \"qld\",\r\n  \"pincode\": \"1122\"\r\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -44,10 +44,10 @@
           }
         },
         "url": {
-          "raw": "https://cfsdemoapp-fbhfe8hbgtbjbngr.australiaeast-01.azurewebsites.net/api/v1/Users",
+          "raw": "https://testapp2-drfwhmgagea6hzce.australiaeast-01.azurewebsites.net/api/v1/Users",
           "protocol": "https",
           "host": [
-            "cfsdemoapp-fbhfe8hbgtbjbngr",
+            "testapp2-drfwhmgagea6hzce",
             "australiaeast-01",
             "azurewebsites",
             "net"
@@ -67,7 +67,7 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "https://testapp2-drfwhmgagea6hzce.australiaeast-01.azurewebsites.net/api/v1/Users57d3cf06-4dfd-4c9b-aefa-fafa23932fda",
+          "raw": "https://testapp2-drfwhmgagea6hzce.australiaeast-01.azurewebsites.net/api/v1/Users/7a350a40-5d1e-42ba-929a-fb734f385598",
           "protocol": "https",
           "host": [
             "testapp2-drfwhmgagea6hzce",
@@ -78,7 +78,8 @@
           "path": [
             "api",
             "v1",
-            "Users57d3cf06-4dfd-4c9b-aefa-fafa23932fda"
+            "Users",
+            "7a350a40-5d1e-42ba-929a-fb734f385598"
           ]
         }
       },
@@ -89,11 +90,20 @@
       "request": {
         "method": "PUT",
         "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"firstName\": \"ellis4\",\r\n  \"lastName\": \"string\",\r\n  \"age\": 12,\r\n  \"city\": \"GC\",\r\n  \"state\": \"qld\",\r\n  \"pincode\": \"1122\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
         "url": {
-          "raw": "https://cfsdemoapp-fbhfe8hbgtbjbngr.australiaeast-01.azurewebsites.net/api/v1/Users/3006bab8-7a86-470b-b314-53578a3116a9",
+          "raw": "https://testapp2-drfwhmgagea6hzce.australiaeast-01.azurewebsites.net/api/v1/Users/7a350a40-5d1e-42ba-929a-fb734f385598",
           "protocol": "https",
           "host": [
-            "cfsdemoapp-fbhfe8hbgtbjbngr",
+            "testapp2-drfwhmgagea6hzce",
             "australiaeast-01",
             "azurewebsites",
             "net"
@@ -102,7 +112,7 @@
             "api",
             "v1",
             "Users",
-            "3006bab8-7a86-470b-b314-53578a3116a9"
+            "7a350a40-5d1e-42ba-929a-fb734f385598"
           ]
         }
       },
@@ -114,7 +124,7 @@
         "method": "DELETE",
         "header": [],
         "url": {
-          "raw": "https://testapp2-drfwhmgagea6hzce.australiaeast-01.azurewebsites.net/api/v1/Users/21d235b1-a0e9-4a99-8bdd-92009fd34d94",
+          "raw": "https://testapp2-drfwhmgagea6hzce.australiaeast-01.azurewebsites.net/api/v1/Users/cc3a50b0-027f-4b0e-86fa-de5cb62ee817",
           "protocol": "https",
           "host": [
             "testapp2-drfwhmgagea6hzce",
@@ -126,7 +136,7 @@
             "api",
             "v1",
             "Users",
-            "21d235b1-a0e9-4a99-8bdd-92009fd34d94"
+            "cc3a50b0-027f-4b0e-86fa-de5cb62ee817"
           ]
         }
       },
