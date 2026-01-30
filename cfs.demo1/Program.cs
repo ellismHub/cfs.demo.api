@@ -12,6 +12,13 @@ Batteries.Init();
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Ensure SQLite folder exists BEFORE DbContext is configured
+var dbDir = "/home/data"; 
+if (!Directory.Exists(dbDir)) 
+{ 
+    Directory.CreateDirectory(dbDir); 
+}
+
 var azureAdSection = builder.Configuration.GetSection("AzureAd");
 var clientId = azureAdSection["ClientId"];
 var audience = azureAdSection["Audience"];
