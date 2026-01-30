@@ -26,6 +26,9 @@ jobs:
       - name: Build with dotnet
         run: dotnet build --configuration Release
 
+      - name: Clean publish folder 
+        run: rm -rf ./publish
+
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
@@ -47,6 +50,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: .net-app
+          path: .
       
       - name: Login to Azure
         uses: azure/login@v2
@@ -62,4 +66,10 @@ jobs:
           app-name: 'testapp2'
           slot-name: 'Production'
           package: .
+
           
+
+
+
+
+
