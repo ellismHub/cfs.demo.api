@@ -10,8 +10,10 @@ It implements the following operations:
 - PUT /api/users/{id} → update user
 - DELETE /api/users/{id} → delete user
 
-The API is deployed to Azure as a Web API resource and is protected by a Service principle from MS Entra. It is publicly available.
-Note that this a a rudamentary implementation and does does consider firewalls/VNETS/APIMS etc.
+The API is deployed to Azure as a Web API resource and is protected by a Service principle from MS Entra. 
+The SPN has userdb.read userdb.write role permissions which validated by the api controllers.
+It is publicly available.
+Note that this a a rudamentary implementation and does does consider firewalls/VNETS/Private Eps/APIMS etc.
 
 Github repo:
 https://github.com/ellismHub/cfs.demo.api
