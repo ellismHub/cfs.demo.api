@@ -17,11 +17,11 @@ namespace cfs.demo.Data
             modelBuilder.Entity<User>(b =>
             {
                 b.HasKey(u => u.Id);
-                b.Property(u => u.FirstName).HasMaxLength(200);
-                b.Property(u => u.LastName).HasMaxLength(200);
+                b.Property(u => u.FirstName).IsRequired().HasMaxLength(100);
+                b.Property(u => u.LastName).IsRequired().HasMaxLength(100);
                 b.Property(u => u.Age).IsRequired();
-                b.Property(u => u.City).IsRequired().HasMaxLength(200);
-                b.Property(u => u.State).IsRequired().HasMaxLength(200);
+                b.Property(u => u.City).IsRequired();
+                b.Property(u => u.State).IsRequired();
                 b.Property(u => u.Pincode).IsRequired().HasMaxLength(10);
             });
         }

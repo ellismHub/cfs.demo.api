@@ -4,8 +4,10 @@ namespace cfs.demo.Models
 {
     public class UserUpdateDto
     {
+        [StringLength(100, MinimumLength = 2)]
         public string? FirstName { get; set; }
 
+        [StringLength(100, MinimumLength = 2)]
         public string? LastName { get; set; }
 
         [Range(0, 120)]
