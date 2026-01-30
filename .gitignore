@@ -1,0 +1,68 @@
+## Build artifacts
+bin/
+obj/
+out/
+artifacts/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio
+.vs/
+
+## ASP.NET Core
+# Logs
+logs/
+*.log
+
+# Hosting
+*.db
+*.db-shm
+*.db-wal
+
+## Configuration files
+# Keep appsettings.json, ignore secrets
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.local.json
+secrets.json
+
+## Environment files
+.env
+.env.*
+
+## IIS / Web
+*.vspscc
+*.vssscc
+*.pubxml
+*.publishsettings
+
+## NuGet
+*.nupkg
+*.snupkg
+packages/
+*.nuget.props
+*.nuget.targets
+
+## Azure
+# Function Apps / local settings
+local.settings.json
+
+## Rider / JetBrains
+.idea/
+*.iml
+
+## OS-specific
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+## Other
+# Auto-generated files
+Generated/

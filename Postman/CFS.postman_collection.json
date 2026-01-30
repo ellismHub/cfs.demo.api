@@ -1,0 +1,263 @@
+{
+  "info": {
+    "_postman_id": "4e378ef3-e1ef-44b2-8479-d50f72ecbe74",
+    "name": "CFS",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "488868"
+  },
+  "item": [
+    {
+      "name": "All users",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://cfsdemoapp-fbhfe8hbgtbjbngr.australiaeast-01.azurewebsites.net/api/v1/Users",
+          "protocol": "https",
+          "host": [
+            "cfsdemoapp-fbhfe8hbgtbjbngr",
+            "australiaeast-01",
+            "azurewebsites",
+            "net"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "Users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create user",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"firstName\": \"ellis3\",\r\n  \"lastName\": \"string\",\r\n  \"age\": 12,\r\n  \"city\": \"brisbane\",\r\n  \"state\": \"qld\",\r\n  \"pincode\": \"1122\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cfsdemoapp-fbhfe8hbgtbjbngr.australiaeast-01.azurewebsites.net/api/v1/Users",
+          "protocol": "https",
+          "host": [
+            "cfsdemoapp-fbhfe8hbgtbjbngr",
+            "australiaeast-01",
+            "azurewebsites",
+            "net"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "Users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get user",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://cfsdemoapp-fbhfe8hbgtbjbngr.australiaeast-01.azurewebsites.net/api/v1/Users/3006bab8-7a86-470b-b314-53578a3116a9",
+          "protocol": "https",
+          "host": [
+            "cfsdemoapp-fbhfe8hbgtbjbngr",
+            "australiaeast-01",
+            "azurewebsites",
+            "net"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "Users",
+            "3006bab8-7a86-470b-b314-53578a3116a9"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update user",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "https://cfsdemoapp-fbhfe8hbgtbjbngr.australiaeast-01.azurewebsites.net/api/v1/Users/3006bab8-7a86-470b-b314-53578a3116a9",
+          "protocol": "https",
+          "host": [
+            "cfsdemoapp-fbhfe8hbgtbjbngr",
+            "australiaeast-01",
+            "azurewebsites",
+            "net"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "Users",
+            "3006bab8-7a86-470b-b314-53578a3116a9"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete user",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://cfsdemoapp-fbhfe8hbgtbjbngr.australiaeast-01.azurewebsites.net/api/v1/Users/fc666965-aa7c-468c-93a3-d7c4bc152a72",
+          "protocol": "https",
+          "host": [
+            "cfsdemoapp-fbhfe8hbgtbjbngr",
+            "australiaeast-01",
+            "azurewebsites",
+            "net"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "Users",
+            "fc666965-aa7c-468c-93a3-d7c4bc152a72"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "swagger",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://cfsdemoapp-fbhfe8hbgtbjbngr.australiaeast-01.azurewebsites.net/swagger/index.html",
+          "protocol": "https",
+          "host": [
+            "cfsdemoapp-fbhfe8hbgtbjbngr",
+            "australiaeast-01",
+            "azurewebsites",
+            "net"
+          ],
+          "path": [
+            "swagger",
+            "index.html"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "auth": {
+    "type": "oauth2",
+    "oauth2": [
+      {
+        "key": "clientId",
+        "value": "92d4688b-0da4-422b-8407-bef8bc382402",
+        "type": "string"
+      },
+      {
+        "key": "clientSecret",
+        "value": "X7F8Q~Zxsn57cx66YatfZ5PTTVnabkuC0C5Uaa58",
+        "type": "string"
+      },
+      {
+        "key": "scope",
+        "value": "api://92d4688b-0da4-422b-8407-bef8bc382402/.default",
+        "type": "string"
+      },
+      {
+        "key": "refreshRequestParams",
+        "value": [],
+        "type": "any"
+      },
+      {
+        "key": "tokenRequestParams",
+        "value": [],
+        "type": "any"
+      },
+      {
+        "key": "authRequestParams",
+        "value": [],
+        "type": "any"
+      },
+      {
+        "key": "tokenName",
+        "value": "test",
+        "type": "string"
+      },
+      {
+        "key": "challengeAlgorithm",
+        "value": "S256",
+        "type": "string"
+      },
+      {
+        "key": "state",
+        "value": "1234",
+        "type": "string"
+      },
+      {
+        "key": "redirect_uri",
+        "value": "https://oauth.pstmn.io/v1/callback",
+        "type": "string"
+      },
+      {
+        "key": "grant_type",
+        "value": "client_credentials",
+        "type": "string"
+      },
+      {
+        "key": "authUrl",
+        "value": "https://login.microsoftonline.com/35d6f937-f4f8-43ce-a4b5-7497ca07b29c/oauth2/v2.0/authorize",
+        "type": "string"
+      },
+      {
+        "key": "addTokenTo",
+        "value": "header",
+        "type": "string"
+      },
+      {
+        "key": "client_authentication",
+        "value": "header",
+        "type": "string"
+      },
+      {
+        "key": "accessTokenUrl",
+        "value": "https://login.microsoftonline.com/35d6f937-f4f8-43ce-a4b5-7497ca07b29c/oauth2/v2.0/token",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}
