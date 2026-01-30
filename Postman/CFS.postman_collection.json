@@ -12,10 +12,10 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "https://cfsdemoapp-fbhfe8hbgtbjbngr.australiaeast-01.azurewebsites.net/api/v1/Users",
+          "raw": "https://testapp2-drfwhmgagea6hzce.australiaeast-01.azurewebsites.net/api/v1/Users",
           "protocol": "https",
           "host": [
-            "cfsdemoapp-fbhfe8hbgtbjbngr",
+            "testapp2-drfwhmgagea6hzce",
             "australiaeast-01",
             "azurewebsites",
             "net"
@@ -67,10 +67,10 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "https://cfsdemoapp-fbhfe8hbgtbjbngr.australiaeast-01.azurewebsites.net/api/v1/Users/3006bab8-7a86-470b-b314-53578a3116a9",
+          "raw": "https://testapp2-drfwhmgagea6hzce.australiaeast-01.azurewebsites.net/api/v1/Users57d3cf06-4dfd-4c9b-aefa-fafa23932fda",
           "protocol": "https",
           "host": [
-            "cfsdemoapp-fbhfe8hbgtbjbngr",
+            "testapp2-drfwhmgagea6hzce",
             "australiaeast-01",
             "azurewebsites",
             "net"
@@ -78,8 +78,7 @@
           "path": [
             "api",
             "v1",
-            "Users",
-            "3006bab8-7a86-470b-b314-53578a3116a9"
+            "Users57d3cf06-4dfd-4c9b-aefa-fafa23932fda"
           ]
         }
       },
@@ -115,10 +114,10 @@
         "method": "DELETE",
         "header": [],
         "url": {
-          "raw": "https://cfsdemoapp-fbhfe8hbgtbjbngr.australiaeast-01.azurewebsites.net/api/v1/Users/fc666965-aa7c-468c-93a3-d7c4bc152a72",
+          "raw": "https://testapp2-drfwhmgagea6hzce.australiaeast-01.azurewebsites.net/api/v1/Users/21d235b1-a0e9-4a99-8bdd-92009fd34d94",
           "protocol": "https",
           "host": [
-            "cfsdemoapp-fbhfe8hbgtbjbngr",
+            "testapp2-drfwhmgagea6hzce",
             "australiaeast-01",
             "azurewebsites",
             "net"
@@ -127,7 +126,7 @@
             "api",
             "v1",
             "Users",
-            "fc666965-aa7c-468c-93a3-d7c4bc152a72"
+            "21d235b1-a0e9-4a99-8bdd-92009fd34d94"
           ]
         }
       },
@@ -139,10 +138,10 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "https://cfsdemoapp-fbhfe8hbgtbjbngr.australiaeast-01.azurewebsites.net/swagger/index.html",
+          "raw": "https://testapp2-drfwhmgagea6hzce.australiaeast-01.azurewebsites.net/swagger/index.html",
           "protocol": "https",
           "host": [
-            "cfsdemoapp-fbhfe8hbgtbjbngr",
+            "testapp2-drfwhmgagea6hzce",
             "australiaeast-01",
             "azurewebsites",
             "net"
