@@ -21,5 +21,6 @@ https://github.com/ellismHub/cfs.demo.api
 The postman collection to excercise this API is located in the git:
 
 [https://github.com/ellismHub/cfs.demo.api](https://github.com/ellismHub/cfs.demo.api/tree/main/Postman)
+The main folder in the collection (CFS) contain sthe Oauth2 token fetch
 
 Note : copilot was used generate some code and tests
