@@ -26,12 +26,12 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
         options.Authority = $"{builder.Configuration["AzureAd:Instance"]}{builder.Configuration["AzureAd:TenantId"]}/v2.0";
-        //options.Audience = builder.Configuration["AzureAd:ClientId"];
+        options.Audience = builder.Configuration["AzureAd:ClientId"];
         // Disable audience validation entirely (accept any aud)
-        options.TokenValidationParameters = new TokenValidationParameters
+/*        options.TokenValidationParameters = new TokenValidationParameters
         {
             ValidateAudience = false
-        };
+        };*/
     });
 
 builder.Services.AddAuthorization();
