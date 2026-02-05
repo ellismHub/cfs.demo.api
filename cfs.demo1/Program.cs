@@ -22,6 +22,18 @@ builder.Services.AddDbContext<CfsDbContext>(options =>
 
 builder.Services.AddScoped<ICfsDatabase, CfsDatabase>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+             .AllowAnyHeader()
+             .AllowAnyMethod();
+
+    });
+});
+
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -71,7 +83,7 @@ using (var scope = app.Services.CreateScope())
 }
 
 app.UseHttpsRedirection();
-
+app.UseCors("AllowAll");
 app.UseAuthentication();
 app.UseAuthorization();
 
