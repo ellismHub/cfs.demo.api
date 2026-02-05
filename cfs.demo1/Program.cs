@@ -33,6 +33,19 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateAudience = false
         };*/
     });
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("SharedAccess", policy =>
+    {
+        policy.RequireAssertion(context =>
+        {
+            var hasScope = context.User.HasClaim("scp", "cfs.contribute");
+            var hasRole = context.User.IsInRole("userdb.read") || context.User.IsInRole("userdb.write");
+
+            return hasScope || hasRole;
+        });
+    });
+});
 
 builder.Services.AddAuthorization();
 

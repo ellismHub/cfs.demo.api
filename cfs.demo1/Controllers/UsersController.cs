@@ -25,7 +25,7 @@ namespace cfs.demo.Controllers
         }
 
         // GET /api/users
-        [Authorize(Roles = "userdb.read")]
+        [Authorize(Policy = "SharedAccess")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetAll()
         {
