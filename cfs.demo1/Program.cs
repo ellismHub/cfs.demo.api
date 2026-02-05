@@ -51,7 +51,13 @@ builder.Services.AddAuthorization(options =>
     {
         policy.RequireAssertion(context =>
         {
-            var hasScope = context.User.HasClaim("scp", "cfs.contribute");
+            foreach (var claim in context.User.Claims)
+            {
+                Console.WriteLine($"CLAIM: {claim.Type} = {claim.Value}");
+            }
+
+
+            var hasScope = context.User.HasClaim("scp", "cfs.contribute") || context.User.HasClaim("http://schemas.microsoft.com/identity/claims/scope", "cfs.contribute");
             var hasRole = context.User.IsInRole("userdb.read") || context.User.IsInRole("userdb.write");
 
             return hasScope || hasRole;
