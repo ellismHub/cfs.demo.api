@@ -36,7 +36,8 @@ namespace cfs.demo.Controllers
         }
 
         // GET /api/users/{id}
-        [Authorize(Roles = "userdb.read")]
+        //[Authorize(Roles = "userdb.read")]
+        [Authorize(Policy = "SharedAccess")]
         [HttpGet("{id:guid}", Name = "GetUserById")]
         public async Task<ActionResult<User>> GetById(Guid id)
         {
@@ -54,6 +55,7 @@ namespace cfs.demo.Controllers
         }
 
         // POST /api/users
+        [Authorize(Policy = "SharedAccess")]
         [HttpPost]
         public async Task<ActionResult<User>> Create([FromBody] UserCreateDto dto)
         {
@@ -91,7 +93,8 @@ namespace cfs.demo.Controllers
 
 
         // PUT /api/users/{id}
-        [Authorize(Roles = "userdb.write")]
+        //[Authorize(Roles = "userdb.write")]
+        [Authorize(Policy = "SharedAccess")]
         [HttpPut("{id:guid}")]
         public async Task<ActionResult> Update(Guid id, [FromBody] UserUpdateDto dto)
         {
@@ -135,7 +138,8 @@ namespace cfs.demo.Controllers
         }
 
         // DELETE /api/users/{id}
-        [Authorize(Roles = "userdb.write")]
+        //[Authorize(Roles = "userdb.write")]
+        [Authorize(Policy = "SharedAccess")]
         [HttpDelete("{id:guid}")]
         public async Task<ActionResult> Delete(Guid id)
         {

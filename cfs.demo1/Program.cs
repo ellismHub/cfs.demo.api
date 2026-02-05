@@ -57,7 +57,8 @@ builder.Services.AddAuthorization(options =>
             }
 
 
-            var hasScope = context.User.HasClaim("scp", "cfs.contribute") || context.User.HasClaim("http://schemas.microsoft.com/identity/claims/scope", "cfs.contribute");
+            var hasScope = context.User.HasClaim("scp", "cfs.contribute") || 
+                           context.User.HasClaim("http://schemas.microsoft.com/identity/claims/scope", "cfs.contribute");
             var hasRole = context.User.IsInRole("userdb.read") || context.User.IsInRole("userdb.write");
 
             return hasScope || hasRole;
